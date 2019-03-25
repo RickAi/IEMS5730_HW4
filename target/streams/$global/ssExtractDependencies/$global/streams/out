@@ -1,7 +1,7 @@
-[error] sbt.librarymanagement.ResolveException: unresolved dependency: org.apache.spark#spark-core_2.12;2.3.0: not found
-[error] unresolved dependency: org.apache.spark#spark-streaming_2.12;2.3.0: not found
-[error] unresolved dependency: org.apache.spark#spark-sql_2.12;2.3.0: not found
-[error] unresolved dependency: org.apache.spark#spark-mllib_2.12;2.3.0: not found
+[error] sbt.librarymanagement.ResolveException: unresolved dependency: org.apache.spark#spark-core_2.9.2;2.4.0: not found
+[error] unresolved dependency: org.apache.spark#spark-streaming_2.9.2;2.4.0: not found
+[error] unresolved dependency: org.apache.spark#spark-sql_2.9.2;2.4.0: not found
+[error] unresolved dependency: org.apache.spark#spark-mllib_2.9.2;2.4.0: not found
 [error] 	at sbt.internal.librarymanagement.IvyActions$.resolveAndRetrieve(IvyActions.scala:332)
 [error] 	at sbt.internal.librarymanagement.IvyActions$.$anonfun$updateEither$1(IvyActions.scala:208)
 [error] 	at sbt.internal.librarymanagement.IvySbt$Module.$anonfun$withModule$1(Ivy.scala:239)
@@ -49,7 +49,3 @@
 [error] 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
 [error] 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
 [error] 	at java.lang.Thread.run(Thread.java:748)
-[error] (ssExtractDependencies) sbt.librarymanagement.ResolveException: unresolved dependency: org.apache.spark#spark-core_2.12;2.3.0: not found
-[error] unresolved dependency: org.apache.spark#spark-streaming_2.12;2.3.0: not found
-[error] unresolved dependency: org.apache.spark#spark-sql_2.12;2.3.0: not found
-[error] unresolved dependency: org.apache.spark#spark-mllib_2.12;2.3.0: not found
