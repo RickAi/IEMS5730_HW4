@@ -3,3 +3,4 @@ web-Google.txt
 .idea/*
 target/*
 project/target/*
+*.csv

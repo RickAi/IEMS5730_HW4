@@ -39,7 +39,6 @@ object NaivePageRank {
 
     ranks.sortBy(_._2, ascending = false).take(100).foreach(tup => println(s"${tup._1}\t${tup._2}"))
 
-
     val endTimeMillis = System.currentTimeMillis()
     val durationSeconds = (endTimeMillis - startTimeMillis) / 1000
     println(s"Total time cost=${durationSeconds}s")

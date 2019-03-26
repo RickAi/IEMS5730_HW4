@@ -9,7 +9,7 @@ object AdvancedPageRank {
 
     val startTimeMillis = System.currentTimeMillis()
 
-    val appName = if (args.length >= 1) args(0).toString else "NaivePageRank"
+    val appName = if (args.length >= 1) args(0).toString else "AdvancedPageRank"
     val master = if (args.length >= 2) args(1).toString else "local"
     val filePath = if (args.length >= 3) args(2).toString else "./web-Google.txt_sample"
     val partitions = if (args.length >= 4) args(3).toInt else 3
@@ -17,6 +17,7 @@ object AdvancedPageRank {
     println(s"AppName=$appName")
     println(s"Master=$master")
     println(s"FilePath=$filePath")
+    println(s"Partitions=$partitions")
 
     val spark = SparkSession.builder.
       master(master).
