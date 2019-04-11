@@ -41,7 +41,7 @@ object MovieALS {
 
     val model = ALS.train(ratings, 50, 10, 0.01)
 
-    val userIds = Array(1, 2, 3)
+    val userIds = Array(1, 1001, 10001)
     for (userId <- userIds) {
       val userMovies = allMovies.map(movieId => (userId, movieId))
       println(s"\nTop 10 favorite movies of user ${userId}")
