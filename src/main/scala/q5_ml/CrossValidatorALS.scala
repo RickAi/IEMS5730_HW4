@@ -4,7 +4,7 @@ import org.apache.spark.ml.evaluation.RegressionEvaluator
 import org.apache.spark.ml.recommendation.ALS
 import org.apache.spark.ml.tuning.{CrossValidator, ParamGridBuilder}
 import org.apache.spark.mllib.recommendation.Rating
-import org.apache.spark.sql.SparkSession
+import org.apache.spark.sql.{Row, SparkSession}
 
 object CrossValidatorALS {
 
@@ -39,6 +39,8 @@ object CrossValidatorALS {
 
     val als = new ALS().setItemCol("movie")
 
+    // use a ParamGridBuilder to construct a grid of parameters to
+    // search for the best set of parameters.
     val paramGrid = new ParamGridBuilder()
       .addGrid(als.regParam, Array(50, 10, 0.01))
       .build()
@@ -61,7 +63,8 @@ object CrossValidatorALS {
     val testingDF = spark.createDataFrame(userMovies)
       .toDF("user", "movie")
 
-    cvModel.transform(testingDF)
+    // print out line by line
+    cvModel.transform(testingDF).collect().foreach(println)
 
     val endTimeMillis = System.currentTimeMillis()
     val durationSeconds = (endTimeMillis - startTimeMillis) / 1000
