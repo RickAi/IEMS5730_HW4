@@ -376,10 +376,10 @@ After Obama’s executive actions on gun control announced on 2016, the GUN crim
 ### a. Setup these temporary access keys.
 
 ```scala
-val consumerKey = "I3ocH634s4KMuySLGP5tHalTv"
-val consumerSecret = "Sqhv5aiPyMAdkzHOYHfrjE8bPbzvkbLeslXP3m2wlGHjALAlcx"
-val accessToken = "804585635767930880-Zb4lDk1iFv51PzeECsscu0PZ2y2xNue"
-val accessTokenSecret = "Cthb9m5z8bEIozEdgJv6ww9XNMswDrmjed0OZ3LOBQAvP"
+val consumerKey = "xxx"
+val consumerSecret = "xxx"
+val accessToken = "xxx"
+val accessTokenSecret = "xxx"
 ```
 
 ### b. Find the Top-10 most popular hashtags under the topic: “Trump”
